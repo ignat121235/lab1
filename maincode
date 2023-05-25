@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    long long n, m, a, count = 1;
+    
+    cin >> n >> m >> a;
+    if(n > a)
+        count*=(n + a - 1)/a;
+    if(m > a)
+       count *=(m + a - 1)/a;
+    cout << count;
+    return 0;
+}
